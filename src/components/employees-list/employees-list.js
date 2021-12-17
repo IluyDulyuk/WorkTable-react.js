@@ -6,7 +6,7 @@ const EmployeesList = ({data}) => {
 
     let elements = data.map(item => {
         return (
-            <EmployeesListItem {...item}/>
+            <EmployeesListItem key={item.id} {...item}/>
         );
     })
 
